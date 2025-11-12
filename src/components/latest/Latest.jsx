@@ -6,17 +6,24 @@ const Latest = () => {
 	const { latests } = React.useContext(AppContext)
 
 	return (
-		<div>
+		<div >
 			<div>
 				<h2 className=' py-9 text-4xl font-bold px-8'>Latest Recipes</h2>
 			</div>
-			<div className='flex flex-wrap justify-center gap-8'>
-				{latests.map(item => (
-					<div key={item.id} className='latest-card'>
-						<img width={300} height={200} src={item.img} alt={item.name} />
-						<h3>{item.name}</h3>
-					</div>
-				))}
+
+			<div className='flex flex-col gap-12 items-center'>
+				<div className='flex flex-wrap justify-center gap-8'>
+					{latests.map(item => (
+						<div key={item.id} className='latest-card'>
+							<img width={300} height={200} src={item.img} alt={item.name} />
+							<h3>{item.name}</h3>
+						</div>
+					))}
+				</div>
+
+				<button className='w-[180] px-12 py-4 border  items-center justify-center flex'>
+					Load More
+				</button>
 			</div>
 		</div>
 	)

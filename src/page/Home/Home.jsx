@@ -6,6 +6,7 @@ import Categories from '../../components/categories/Categories'
 import Join from '../../components/join/Join'
 import Collections from '../../components/collections/Collections'
 import Latest from '../../components/latest/Latest'
+import Footer from '../../components/footer/Footer'
 
 const Home = () => {
 	return (
@@ -18,9 +19,10 @@ const Home = () => {
 			</div>
 			<Join />
 			<div className='w-[1440px] items-center mx-auto'>
-			<Collections />
-			<Latest />
-			</div>		
+				<Collections />
+				<Latest />
+			</div>
+			<Footer />
 		</>
 	)
 }
