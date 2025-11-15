@@ -4,6 +4,8 @@ import Home from './page/Home/Home.jsx'
 
 import AppContext from './context'
 import { Routes, Route } from 'react-router-dom'
+import Category from './page/Category/Category.jsx'
+import Auth from './page/Auth/Auth.jsx'
 
 const App = () => {
 	const [super1, setSuper1] = useState([
@@ -164,6 +166,8 @@ const App = () => {
 		>
 			<Routes>
 				<Route path='/' element={<Home />} />
+				<Route path='/category' element={<Category/>} />
+				<Route path='/auth' element={<Auth/>}/>
 			</Routes>
 		</AppContext.Provider>
 	)

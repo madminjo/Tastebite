@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const Header = () => {
 	const headerURL = [
@@ -12,7 +13,7 @@ const Header = () => {
 	return (
 		<div className='flex items-center justify-between py-8 px-8'>
 			<div className="headerLogo">
-				<img src="/logo.svg" alt="" />
+				<Link to="/"><img src="/logo.svg" alt="" /></Link>
 			</div>
 			<ul className='flex items-center gap-10'>
 				{headerURL.map((item, index) => (
@@ -21,7 +22,9 @@ const Header = () => {
 			</ul>
 			<div className='flex gap-8'>
 				<img src="/search.svg" alt="search" />
+				<Link to="/auth" >
 				<img src="/user.svg" alt="user" />
+				</Link>
 			</div>
 		</div>
 	)

@@ -5,7 +5,7 @@ const Homepage = () => {
 	return (
 		<div className=' flex items-center justify-center py-10'>
 			<div>
-				<img width={800} height={500} src='/homepage/home.png' alt='home' />
+				<img className='max-w-[800px] min-w-[100px] max-h-[600px] min-h-[50px]'  src='/homepage/home.png' alt='home' />
 			</div>
 			<div className='bg-blue-200 w-[550px] h-[600px] flex flex-col justify-center items-center gap-10 relative'>
 				<div className='flex flex-col w-[400px] h-[500] gap-8 text-black'>

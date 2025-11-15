@@ -23,28 +23,37 @@ const Footer = () => {
 		{ id: 4, title: 'LinkedIn', href: 'https://linkedin.com' },
 	]
 
-	const linksBus = [
-		{
-			id: 1,
-			img: '/icons/facebook.svg',
-			href: 'https://facebook.com',
-		},
-		{
-			id: 2,
-			img: '/icons/instagram.svg',
-			href: 'https://instagram.com',
-		},
-		{
-			id: 3,
-			img: '/icons/twitter.svg',
-			href: 'https://twitter.com',
-		},
-		{
-			id: 4,
-			img: '/icons/youtube.svg',
-			href: 'https://youtube.com',
-		},
-	]
+const linksBus = [
+  {
+    id: 1,
+    img: '/icons/facebook.svg',
+    href: 'https://facebook.com',
+    width: 20,
+    height: 20,
+  },
+  {
+    id: 2,
+    img: '/icons/instagram.svg',
+    href: 'https://instagram.com',
+    width: 20,
+    height: 20,
+  },
+  {
+    id: 3,
+    img: '/icons/twitter.svg',
+    href: 'https://twitter.com',
+    width: 90,
+    height: 90,
+  },
+  {
+    id: 4,
+    img: '/icons/youtube.svg',
+    href: 'https://youtube.com',
+    width: 90,
+    height: 90,
+  },
+]
+
 
 	return (
 		<div className='footer flex flex-col items-center justify-center py-9'>
@@ -105,7 +114,7 @@ const Footer = () => {
         <div className="flex gap-4">
           {linksBus.map(item => (
             <a width={20} height={20} key={item.id} href={item.href} target="_blank" rel="noreferrer" className="inline-block">
-              <img  src={item.img} alt={`social-${item.id}`} width={20} height={20} />
+              <img  src={item.img} alt={`social-${item.id}`} width={item.with} height={item.hith} />
             </a>
           ))}
 				</div>	

@@ -15,7 +15,7 @@ const Home = () => {
 				<Header />
 				<Homepage />
 				<MinCard />
-				<Categories />
+				<Categories cats="cart" />
 			</div>
 			<Join />
 			<div className='w-[1440px] items-center mx-auto'>
